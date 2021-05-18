@@ -1,8 +1,21 @@
 # ft_printf
 
-Recoding C-library's printf function. ft_printf can print different contents depending on conversions and flags.
+## Description
+```c
+int   ft_printf(char const *str, ...)
+```
+Recoding C-library's printf function. ft_printf can print different contents depending on conversions and flags. You can print using the following syntax: 
 
-a) managed following conversions: s p d D i o O u U x X c f F and %%
-b) managed flags - #0-+ and space
-c) managed minimum field-width and precision
-d) managed lenght modifiers hh, h, l, ll, j, z, L
+```
+%[flag][min-width].[precision][length modifier][conversion specifier]
+```
+
+- managed following conversions: s p d D i o O u U x X c f F and %%
+- managed flags - #0-+ and space
+- managed minimum field-width and precision
+- managed lenght modifiers hh, h, l, ll, j, z, L
+
+## Usage
+
+``make`` will compile a ``libftprintf.a`` library. Use it like you would use the real printf function:
+
