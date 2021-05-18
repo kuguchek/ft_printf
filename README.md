@@ -11,11 +11,19 @@ Recoding C-library's printf function. ft_printf can print different contents dep
 ```
 
 - managed following conversions: s p d D i o O u U x X c f F and %%
-- managed flags - #0-+ and space
+- managed flags: #0-+ and space
 - managed minimum field-width and precision
-- managed lenght modifiers hh, h, l, ll, j, z, L
+- managed lenght modifiers: hh, h, l, ll, j, z, L
 
 ## Usage
 
-``make`` will compile a ``libftprintf.a`` library. Use it like you would use the real printf function:
+``make`` will compile a ``libftprintf.a`` library. Use it like you would use the real printf function
+
+```c
+#include "src/ft_printf.h"
+
+ft_printf("**%d**% d% d **\n", 42, 42, -42);
+//output: **42** 42-42 **
+```
+
 
